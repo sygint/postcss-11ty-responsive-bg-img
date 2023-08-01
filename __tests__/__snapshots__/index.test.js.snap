@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with background-image rule 1`] = `".background-image-test { background-image: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with double quotes for url 1`] = `".double-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with multiple widths 1`] = `
+".multiple-widths-test { background: url(\\"/img/HOdUYjZ3EM-400.webp\\") }
+@media (min-width: 640px) { .multiple-widths-test { background-image: url(\\"/img/HOdUYjZ3EM-640.webp\\"); } }
+@media (min-width: 768px) { .multiple-widths-test { background-image: url(\\"/img/HOdUYjZ3EM-768.webp\\"); } }"
+`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with single quotes for url 1`] = `".single-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with url function 1`] = `
+".url-function-test { background: url(\\"/img/HOdUYjZ3EM-400.webp\\") }
+@media (min-width: 640px) { .url-function-test { background-image: url(\\"/img/HOdUYjZ3EM-640.webp\\"); } }
+@media (min-width: 768px) { .url-function-test { background-image: url(\\"/img/HOdUYjZ3EM-768.webp\\"); } }"
+`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with url function with double quotes 1`] = `".url-function-double-quotes-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with url function with single quotes 1`] = `".url-function-single-quotes-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
