@@ -1,6 +1,6 @@
 {
   "name": "postcss-11ty-responsive-bg-img",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PostCSS plugin to generate responsive image css, powered by eleventy-img",
   "keywords": [
     "postcss",

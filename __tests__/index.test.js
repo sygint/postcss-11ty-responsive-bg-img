@@ -4,6 +4,8 @@ const postcss = require("postcss");
 const plugin = require("../");
 
 const imgUrl = "./__tests__/images/happy-cat.png";
+const singleQuoteImgUrl = './__tests__/images/happy-ca\'t.png';
+const doubleQuoteImgUrl = './__tests__/images/happy-ca\"t.png';
 const singleWidth = "500";
 const multipleWidths = "400, 640, 768";
 
@@ -30,6 +32,8 @@ const cases = {
   "background-image rule": `.background-image-test { background-image: responsive-bg-img(${imgUrl}, ${singleWidth}) }`,
   "single quotes for url": `.single-quote-test { background: responsive-bg-img('${imgUrl}', ${singleWidth}) }`,
   "double quotes for url": `.double-quote-test { background: responsive-bg-img("${imgUrl}", ${singleWidth}) }`,
+  "single quotes for double quote url": `.single-quote-double-quote-test { background: responsive-bg-img('${doubleQuoteImgUrl}', ${singleWidth}) }`,
+  "double quotes for single quote url": `.double-quote-single-quote-test { background: responsive-bg-img("${singleQuoteImgUrl}", ${singleWidth}) }`,
   "multiple widths": `.multiple-widths-test { background: responsive-bg-img(${imgUrl}, ${multipleWidths}) }`,
   "url function": `.url-function-test { background: responsive-bg-img(url(${imgUrl}), ${multipleWidths}) }`,
   "url function with single quotes": `.url-function-single-quotes-test { background: responsive-bg-img(url('${imgUrl}'), ${singleWidth}) }`,

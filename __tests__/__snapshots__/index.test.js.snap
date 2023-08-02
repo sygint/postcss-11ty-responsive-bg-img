@@ -2,6 +2,8 @@
 
 exports[`postcss-11ty-responsive-bg-img renders correctly when called with background-image rule 1`] = `".background-image-test { background-image: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
 
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with double quotes for single quote url 1`] = `".double-quote-single-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
+
 exports[`postcss-11ty-responsive-bg-img renders correctly when called with double quotes for url 1`] = `".double-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
 
 exports[`postcss-11ty-responsive-bg-img renders correctly when called with multiple widths 1`] = `
@@ -9,6 +11,8 @@ exports[`postcss-11ty-responsive-bg-img renders correctly when called with multi
 @media (min-width: 640px) { .multiple-widths-test { background-image: url(\\"/img/HOdUYjZ3EM-640.webp\\"); } }
 @media (min-width: 768px) { .multiple-widths-test { background-image: url(\\"/img/HOdUYjZ3EM-768.webp\\"); } }"
 `;
+
+exports[`postcss-11ty-responsive-bg-img renders correctly when called with single quotes for double quote url 1`] = `".single-quote-double-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
 
 exports[`postcss-11ty-responsive-bg-img renders correctly when called with single quotes for url 1`] = `".single-quote-test { background: url(\\"/img/HOdUYjZ3EM-500.webp\\") }"`;
 
