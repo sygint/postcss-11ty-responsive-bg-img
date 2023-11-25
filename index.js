@@ -54,7 +54,7 @@ async function processDecl(decl, url, options) {
     .slice(1)
     .map(
       (x) =>
-        `\n@media (min-width: ${x.width}px) { ${decl.parent.selector} { background-image: url("${x.url}"); } }`
+        `\n@media (min-width: ${x.width}px) { ${decl.parent.selector} { ${decl.prop}: url("${x.url}"); } }`
     )
     .join("");
 
@@ -96,8 +96,7 @@ async function processResponsiveBgImg(decl, opts) {
 module.exports = (opts = {}) => ({
   postcssPlugin: "postcss-11ty-responsive-bg-img",
   Declaration: {
-    "background-image": (decl) => processResponsiveBgImg(decl, opts),
-    background: (decl) => processResponsiveBgImg(decl, opts),
+    "*": (decl) => processResponsiveBgImg(decl, opts),
   },
 });
 
